@@ -5,58 +5,36 @@ background: rgb(209,206,255);
 background: linear-gradient(90deg, rgba(209,206,255,1) 0%, rgba(231,251,255,1) 100%);
 }
 
-img{display:block}
 
+/* all list items */
 li{display:inline;
    padding:20px;
    font-size:small;}
-
+/* all links */
    a{text-align:right;
      text-decoration-color: black;
      text-decoration:none;
+     text
      
     }
-
 h1,h2 {display:block}
-
 body {
     font-family: "Andale Mono", "Courier New", monospace;
-    font-size: small;
-    
-  }
-
-div.container{text}
-div.absolute{
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    height: 100px;
-    border: 30px solid #73AD21;
+    font-size: small;}
 
 
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    
-    
+/* contact form */
+    input[type=text], select, textarea {
     font-family: "Andale Mono", "Courier New", monospace;
-    display:block;
+    display:flex;
+    justify-content: flex-end;
     background-color:hwb(209 70% 0% / 0);
-    width: 10%; /* Full width */
+    width: 10%; 
     padding: 12px; Some padding  
-    /* border: 1px solid rgb(0, 0, 0); Gray border */
     border-radius: 10px; 
-    border: none; /* Make sure that padding and width stays in place */
-    /* margin-top: 6px; /* Add a top margin */
-    /* margin-bottom: 16px; Bottom margin */ */
+    border: none; 
   }
-  
-  input:hover{background-color: rgb(184, 184, 255);}
-
-  
-  /* Style the submit button with a specific background color etc */
+input:hover{background-color: rgb(184, 184, 255);}
   input[type=submit] {
 
     font-family: "Andale Mono", "Courier New", monospace;
@@ -71,10 +49,10 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: hwb(158 13% 24%);
   }
-
-  .container{
+  
+  /* .container{
     display:flexbox;
-  }
+  } */
 
   
 footer {
