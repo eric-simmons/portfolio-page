@@ -1,6 +1,6 @@
 body
 {
-    background-color: rgb(255, 195, 249);
+    background-color: rgb(223, 247, 255);
 
 }
 
@@ -8,12 +8,13 @@ body
 
 a {
     text-decoration: none;
+    
 }
 
 
 
 .main{
-background-color: rgb(255, 195, 249);
+    background-color: rgb(223, 247, 255);
 max-width: 100%;
 max-height: 100%; 
 margin: 100px;
@@ -39,24 +40,27 @@ grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) ;
     /* background-color: rgb(255, 255, 255); */
     justify-content: center;
     align-content: center;
-    font-style: italic;
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-style: italic; */
+    font-family: monospace;
     font-size: 36px;
-    color:rgb(0, 0, 0);   
+    
+    color:rgba(31, 45, 100, 0.552);   
     border-radius: 10px;
     /* font-size: 20px; */
     /* padding: 20px; */
     /* border:black 2px solid; */
     align-self: center; 
     justify-self: center; 
-    box-shadow: rgba(255, 94, 196, 0.4) 5px 5px, rgba(240, 94, 196, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    box-shadow: rgba(225, 125, 219, 0.445) 0px 20px 30px -10px;
     /* box-shadow: 12px 12px 79px -4px rgb(255, 108, 248), 12px 12px 79px -4px rgb(42, 248, 255) inset; */
    
 
 }
 
 .box:hover {
-    font-size: 48px;
+    color:rgba(22, 32, 73, 0.911);  
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    box-shadow: rgba(214, 118, 207, 0.595) 1px 21px 32px -12px;
 
     /* box-shadow: 12px 12px 79px -4px rgb(80, 41, 78), 12px 12px 79px -4px rgb(14, 255, 223) inset; */
     /* height:400px;
@@ -65,47 +69,48 @@ grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) ;
 
 .box1 {
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg); 
+    /* background-image: url(../images/400_square_purple.jpg) ; */
+     
 }
 
 .box2{
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg);
+    /* background-image: url(../images/400_square_purple.jpg); */
 }
 
 .box3{
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg);
+    /* background-image: url(../images/400_square_purple.jpg); */
 }
 
 .box4{
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg);
+    /* background-image: url(../images/400_square_purple.jpg); */
 }
 
 .box5{
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg);
+    /* background-image: url(../images/400_square_purple.jpg); */
 }
 
 .box6{
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg);
+    /* background-image: url(../images/400_square_purple.jpg); */
 }
 
 .box7{
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg);
+    /* background-image: url(../images/400_square_purple.jpg); */
 }
 
 .box8{
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg);
+    /* background-image: url(../images/400_square_purple.jpg); */
 }
 
 .box9{
     /* placeholder image */
-    background-image: url(../images/400_square_purple.jpg);
+    /* background-image: url(../images/400_square_purple.jpg); */
 }
 /* @media (max-width: 400px) {
 .main {
