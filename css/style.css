@@ -1,0 +1,61 @@
+*{
+    font-family: 'Roboto' , sans-serif;
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px;
+    color: rgb(171, 171, 220);
+    text-shadow: 1px 1px 1px #dfdfdf;
+    font-size: 27px;
+    box-shadow: 20px;
+
+}
+#name{
+    margin: 10px;
+}
+#time{
+    margin: 10px;
+
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#about{
+    display: flex;
+    background-color: aqua;
+    margin:20px;
+    padding: 20px;
+}
+#text-box{
+    display: flex;
+    background-color: purple;
+    margin:20px;
+    padding: 20px;
+}
+#repos {
+    background:rgb(43, 0, 255);
+    justify-self: right;
+    padding: 20px;
+    margin: 20px;
+
+}
+#repo-div {
+    display:flex;
+    width:auto;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+#footer {
+    background-color: green;
+}
