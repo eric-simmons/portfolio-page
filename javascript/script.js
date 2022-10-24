@@ -2,6 +2,7 @@
 let reposDiv = document.getElementById("repos")
 let timeDiv = document.getElementById("time")
 let linksDiv = document.getElementById("links")
+let textDiv = document.getElementById("text-box")
 
 
 //time
@@ -13,9 +14,9 @@ const currentHour = now.hour
 
 
 
-
+//get repos
 const getUserRepos = () => {
-    const apiUrl = 'https://api.github.com/users/' + 'eric-simmons' + '/repos';
+    const apiUrl = 'https://api.github.com/users/' + 'eric-simmons' + '/repos' + '?sort=updated' + '&per_page=5';
 
     fetch(apiUrl)
         .then(function (response) {
@@ -32,18 +33,25 @@ const getUserRepos = () => {
             alert('Unable to connect to GitHub');
         });
 };
-
+//display repos
 const displayRepos = data => {
     data.forEach(repo => {
-        const repoDiv = document.createElement("div")
+        const repoDiv = document.createElement('a')
         repoDiv.setAttribute("id", "repo-div")
-        repoDiv.textContent = repo.description
-        let repoUrl = repo.url
-        console.log(repoUrl)
+        repoDiv.setAttribute("target", "_blank")
+        repoDiv.textContent = repo.name
+        repoDiv.href = repo.clone_url
         reposDiv.appendChild(repoDiv)
     })
     
 }
+
+// setInterval(displayImg, 1000 )
+// function displayImg(){
+//     const newImg = document.createElement('img')
+//     newImg.src = '../images/jellyfish1.jpg'
+//     textDiv.appendChild(newImg)
+// }
 
 const printTime = () => {timeDiv.textContent = date + " " + now}
 
