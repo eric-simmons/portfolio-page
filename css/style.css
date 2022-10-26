@@ -1,64 +1,95 @@
-*{
-    font-family: 'Roboto' , sans-serif;
+* {
+    font-family: 'Roboto', sans-serif;
+
 }
 
-#a{
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1 0 auto;
+    /* background-image: url("../images/hd-wallpaper-gb320dc7af_1920.jpg"); */
 }
-#nav{
+
+a {
+    text-decoration: none;
+}
+
+#nav {
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin: 20px;
     padding: 20px;
+    gap:10px;
     color: rgb(171, 171, 220);
     text-shadow: 1px 1px 1px #dfdfdf;
-    font-size: 27px;
+    font-size: 16px;
     box-shadow: 20px;
 
 }
-#name{
+
+#name {
     margin: 10px;
 }
-#time{
-    margin: 10px;
+
+#time {
+   display:flex;
+   justify-content: flex-end;
 
 }
 
-#main{
+#main {
     display: flex;
+    flex-flow: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
-#about{
+
+#about {
     display: flex;
-    background-color: aqua;
-    margin:20px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 200px;
+    margin: 20px;
     padding: 20px;
 }
-#text-box{
+
+#text-box {
     display: flex;
-    background-color: purple;
-    margin:20px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
     padding: 20px;
+    flex: 0 0 200px;
 }
+
 #repos {
-    background:rgb(43, 0, 255);
-    justify-self: right;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    /* justify-self: right; */
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     margin: 20px;
 
 }
+
 #repo-div {
-    display:flex;
-    width:auto;
-    justify-content: center;
-    background-color: black;
-    color: white;
+    display: flex;
+    width: auto;
+    background-color: rgb(191, 145, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
 }
 
 #footer {
-    background-color: green;
+    display: flex;
+    flex: auto;
+    align-items: flex-end;
 }
