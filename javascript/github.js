@@ -1,4 +1,4 @@
-let reposDiv = document.getElementById("repos")
+let reposDiv = document.getElementById("main")
 
 const getUserRepos = () => {
     const apiUrl = 'https://api.github.com/users/' + 'eric-simmons' + '/repos' + '?sort=updated' + '&per_page=5';
@@ -23,6 +23,7 @@ const displayRepos = data => {
     data.forEach(repo => {
         const repoDiv = document.createElement('a')
         repoDiv.setAttribute("id", "repo-div")
+        repoDiv.setAttribute('class', 'box')
         repoDiv.setAttribute("target", "_blank")
         repoDiv.textContent = repo.name
         repoDiv.href = repo.clone_url

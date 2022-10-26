@@ -66,28 +66,6 @@ a {
     flex: 0 0 200px;
 }
 
-#repos {
-    display: flex;
-    flex-direction: column;
-    background: rgb(255, 255, 255);
-    /* justify-self: right; */
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-
-}
-
-#repo-div {
-    display: flex;
-    width: auto;
-    background-color: rgb(191, 145, 255);
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    margin: 10px;
-}
-
 #footer {
     display: flex;
     flex: auto;
