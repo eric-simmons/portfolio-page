@@ -10,7 +10,9 @@ body {
     flex: 1 0 auto;
     /* background-image: url("../images/hd-wallpaper-gb320dc7af_1920.jpg"); */
 }
-
+#logo{
+    margin:20px;
+}
 a {
     text-decoration: none;
 }
