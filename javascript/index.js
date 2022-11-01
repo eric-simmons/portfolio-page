@@ -4,6 +4,7 @@ let timeDiv = document.getElementById("time")
 let textDiv = document.getElementById("text-box")
 let aboutDiv = document.getElementById("about")
 let currentProjects = document.getElementById("current-projects")
+let lightswitch = document.getElementById("lightswitch")
 
 
 //time
@@ -14,8 +15,10 @@ const currentHour = now.hour
 
 
 
-
-//get repos
+function colorMode(){
+    console.log('clicked')
+   document.body.classList.toggle("lightmode")
+}
 
 
 
@@ -33,3 +36,5 @@ document.createElement('h1').textContent = 'hey'
 const printTime = () => {timeDiv.textContent = date + " " + now}
 
 printTime()
+
+lightswitch.addEventListener('click', colorMode)

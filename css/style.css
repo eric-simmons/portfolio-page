@@ -1,36 +1,50 @@
-* {
-    font-family: 'Roboto', sans-serif;
-
-}
 
 body {
+    background-color: rgb(32, 32, 139);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     flex: 1 0 auto;
+    color: rgb(179, 153, 217);
+    font-family: 'Roboto', sans-serif;
     /* background-image: url("../images/hd-wallpaper-gb320dc7af_1920.jpg"); */
 }
-#logo{
-    margin:20px;
+.lightmode{
+    background-color: rgb(148, 148, 217);
+    color: rgb(32, 32, 139);
 }
-a {
-    text-decoration: none;
-}
-
 #nav {
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 255, 255);
-    justify-content: flex-end;
+   align-items:baseline;
     margin: 20px;
     padding: 20px;
-    gap:10px;
-    color: rgb(171, 171, 220);
-    text-shadow: 1px 1px 1px #dfdfdf;
-    font-size: 16px;
-    box-shadow: 20px;
+    gap:20px;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+#logo{
+    display: flex;
+    margin-right: auto;
 
 }
+
+a:link {
+    color:white;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+
 
 #name {
     margin: 10px;
@@ -53,7 +67,7 @@ a {
 #about {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    
     flex: 0 0 200px;
     margin: 20px;
     padding: 20px;
@@ -62,7 +76,7 @@ a {
 #text-box {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    
     margin: 20px;
     padding: 20px;
     flex: 0 0 200px;
