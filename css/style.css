@@ -1,4 +1,3 @@
-
 body {
     background-color: rgb(32, 32, 139);
     display: flex;
@@ -9,37 +8,49 @@ body {
     font-family: 'Roboto', sans-serif;
     /* background-image: url("../images/hd-wallpaper-gb320dc7af_1920.jpg"); */
 }
-.lightmode{
+
+.lightmode {
+    image: url("../images/lightmode.png");
     background-color: rgb(148, 148, 217);
     color: rgb(32, 32, 139);
 }
+
+.darkmode {
+    image: url("../images/darkmode.png");
+    background-color: rgb(32, 32, 139);
+    color: rgb(179, 153, 217);
+}
+
 #nav {
     display: flex;
     flex-direction: row;
-   align-items:baseline;
+    align-items: baseline;
     margin: 20px;
     padding: 20px;
-    gap:20px;
+    gap: 20px;
     font-size: 18px;
     color: aliceblue;
 }
 
-#logo{
+#logo {
     display: flex;
     margin-right: auto;
 
 }
 
 a:link {
-    color:white;
+    color: white;
     text-decoration: none;
 }
+
 a:visited {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 a:active {
     text-decoration: none;
 }
@@ -51,8 +62,8 @@ a:active {
 }
 
 #time {
-   display:flex;
-   justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
@@ -67,7 +78,7 @@ a:active {
 #about {
     display: flex;
     flex-direction: column;
-    
+
     flex: 0 0 200px;
     margin: 20px;
     padding: 20px;
@@ -76,7 +87,7 @@ a:active {
 #text-box {
     display: flex;
     flex-direction: column;
-    
+
     margin: 20px;
     padding: 20px;
     flex: 0 0 200px;

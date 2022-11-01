@@ -1,7 +1,8 @@
 let main = document.getElementById("main")
+let lightswitch = document.getElementById("lightswitch")
 
 const getUserRepos = () => {
-    const apiUrl = 'https://api.github.com/users/' + 'eric-simmons' + '/repos' + '?sort=updated' + '&per_page=5';
+    const apiUrl = 'https://api.github.com/users/' + 'eric-simmons' + '/repos' + '?sort=updated' + '&per_page=6';
 
     fetch(apiUrl)
         .then(function (response) {
@@ -28,10 +29,17 @@ const displayRepos = data => {
         repoDiv.textContent = repo.name
         repoDiv.href = repo.clone_url
         main.appendChild(repoDiv)
-
-     
     })
     
 }
 
+function colorMode(){
+    console.log('clicked')
+   document.body.classList.toggle("lightmode")
+}
+
+
+
 getUserRepos()
+
+lightswitch.addEventListener('click', colorMode)
