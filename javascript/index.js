@@ -20,8 +20,6 @@ function colorMode(){
    document.body.classList.toggle("lightmode")
 }
 
-
-
 document.createElement('h1').textContent = 'hey'
 //aboutDiv.textContent = 'test'
 //textDiv.appendChild(aboutContent)
