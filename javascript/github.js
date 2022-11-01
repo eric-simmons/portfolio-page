@@ -1,5 +1,6 @@
 let main = document.getElementById("main")
 let lightswitch = document.getElementById("lightswitch")
+let logo = document.getElementById("logo")
 
 const getUserRepos = () => {
     const apiUrl = 'https://api.github.com/users/' + 'eric-simmons' + '/repos' + '?sort=updated' + '&per_page=6';
